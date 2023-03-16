@@ -29,6 +29,7 @@ public class DemoBlazeStepDef {
 	String search,beforePrice,afterPrice;
 	WebElement rate;
 	List<WebElement> items;
+	
 	@BeforeAll
 	public static void setup() {
 		WebDriverManager.edgedriver().setup();
@@ -45,6 +46,7 @@ public class DemoBlazeStepDef {
 	}
 	@When("User enters login credientials")
 	public void user_enters_login_credientials() {
+		wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 		driver.findElement(By.xpath("//input[@id='loginusername']")).sendKeys("ShriAthi");
 		driver.findElement(By.xpath("//input[@id='loginpassword']")).sendKeys("Shri.01");
 		driver.findElement(By.xpath("//button[contains(text(),'Log in')]")).click();
@@ -109,6 +111,7 @@ public class DemoBlazeStepDef {
 		if(items.size()!=0) {
 			driver.findElement(By.xpath("//button[contains(text(),'Place Order' )]")).click();
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(),'Purchase')]")));
+			wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 			driver.findElement(By.xpath("//input[@id='name']")).sendKeys("ShriAthi");
 			driver.findElement(By.xpath("//input[@id='country']")).sendKeys("India");
 			driver.findElement(By.xpath("//input[@id='city']")).sendKeys("Tirunelveli");
@@ -124,6 +127,7 @@ public class DemoBlazeStepDef {
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//button[contains(text(),'OK')]")).click();
 	}
+	
 	@After
 	public void attachImgToReport(Scenario scenario) {
 		TakesScreenshot scr=(TakesScreenshot)driver;

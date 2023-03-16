@@ -9,9 +9,9 @@ Scenario Outline: Add Items To Cart
 When Add an Item "<catagory>" to "<item>" Cart
 Then Items must be added to cart
 Examples: 
-	|catagory|item|
-	|Laptops|MacBook air|
-	|Phones|Samsung galaxy s6|
+	| catagory | item |
+	| Laptops | Sony vaio i7 |
+	| Phones | Sony xperia z5 |
 	
 Scenario: Delete an Item
 When List of items should be available in Cart

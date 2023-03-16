@@ -1,358 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="7" ignored="0" total="7" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="277271" started-at="2023-03-16T15:50:56 IST" finished-at="2023-03-16T15:55:33 IST">
+  <suite name="Default suite" duration-ms="41547" started-at="2023-03-17T00:09:02 IST" finished-at="2023-03-17T00:09:43 IST">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DemoBlazeRunner@646007f4]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="277271" started-at="2023-03-16T15:50:56 IST" finished-at="2023-03-16T15:55:33 IST">
+    <test name="Default test" duration-ms="41547" started-at="2023-03-17T00:09:02 IST" finished-at="2023-03-17T00:09:43 IST">
       <class name="runners.DemoBlazeRunner">
-        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.DemoBlazeRunner@646007f4]" name="setUpClass" is-config="true" duration-ms="13052" started-at="2023-03-16T15:50:56 IST" finished-at="2023-03-16T15:51:09 IST">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.DemoBlazeRunner@646007f4]" name="setUpClass" is-config="true" duration-ms="10453" started-at="2023-03-17T00:09:02 IST" finished-at="2023-03-17T00:09:12 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3d37203b]]>
+                <![CDATA[org.testng.TestRunner@50f097b5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DemoBlazeRunner@646007f4]" name="runScenario" duration-ms="50254" started-at="2023-03-16T15:51:09 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-16T15:51:59 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DemoBlazeRunner@646007f4]" name="runScenario" duration-ms="3973" started-at="2023-03-17T00:09:12 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-17T00:09:16 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Login into an Application"]]>
+                <![CDATA["Valid login"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["DemoBlaze Web Tests"]]>
+                <![CDATA["DemoBlazeWebTest"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[timeout: Timed out receiving message from renderer: 48.102
-  (Session info: MicrosoftEdge=111.0.1661.41)
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [0d523fd3e94f4be2fbca1e9cc962912c, get {url=https://www.demoblaze.com/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.41, ms:edgeOptions: {debuggerAddress: localhost:3842}, msedge: {msedgedriverVersion: 111.0.1661.43 (b6e9cbf64f5a..., userDataDir: C:\Users\HP\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:3842/devtool..., se:cdpVersion: 111.0.1661.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0d523fd3e94f4be2fbca1e9cc962912c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 48.102
-  (Session info: MicrosoftEdge=111.0.1661.41)
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [0d523fd3e94f4be2fbca1e9cc962912c, get {url=https://www.demoblaze.com/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.41, ms:edgeOptions: {debuggerAddress: localhost:3842}, msedge: {msedgedriverVersion: 111.0.1661.43 (b6e9cbf64f5a..., userDataDir: C:\Users\HP\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:3842/devtool..., se:cdpVersion: 111.0.1661.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0d523fd3e94f4be2fbca1e9cc962912c
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
-at stepsDefs.DemoBlazeStepDef.user_is_on_launch_page(DemoBlazeStepDef.java:36)
-at ✽.User is on Launch Page(file:///D:/SDET%20training%20WS/CucumberCaseStudy/src/test/resources/features/demoBlazeBDD.feature:4)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DemoBlazeRunner@646007f4]" name="runScenario" duration-ms="50147" started-at="2023-03-16T15:51:59 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-16T15:52:49 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DemoBlazeRunner@646007f4]" name="runScenario" duration-ms="5943" started-at="2023-03-17T00:09:16 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-17T00:09:22 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Add items to cart"]]>
+                <![CDATA["Adding products to cart"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["DemoBlaze Web Tests"]]>
+                <![CDATA["DemoBlazeWebTest"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[timeout: Timed out receiving message from renderer: 34.952
-  (Session info: MicrosoftEdge=111.0.1661.41)
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [0d523fd3e94f4be2fbca1e9cc962912c, get {url=https://www.demoblaze.com/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.41, ms:edgeOptions: {debuggerAddress: localhost:3842}, msedge: {msedgedriverVersion: 111.0.1661.43 (b6e9cbf64f5a..., userDataDir: C:\Users\HP\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:3842/devtool..., se:cdpVersion: 111.0.1661.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0d523fd3e94f4be2fbca1e9cc962912c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 34.952
-  (Session info: MicrosoftEdge=111.0.1661.41)
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [0d523fd3e94f4be2fbca1e9cc962912c, get {url=https://www.demoblaze.com/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.41, ms:edgeOptions: {debuggerAddress: localhost:3842}, msedge: {msedgedriverVersion: 111.0.1661.43 (b6e9cbf64f5a..., userDataDir: C:\Users\HP\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:3842/devtool..., se:cdpVersion: 111.0.1661.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0d523fd3e94f4be2fbca1e9cc962912c
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
-at stepsDefs.DemoBlazeStepDef.user_is_on_launch_page(DemoBlazeStepDef.java:36)
-at ✽.User is on Launch Page(file:///D:/SDET%20training%20WS/CucumberCaseStudy/src/test/resources/features/demoBlazeBDD.feature:9)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DemoBlazeRunner@646007f4]" name="runScenario" duration-ms="50091" started-at="2023-03-16T15:52:49 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-16T15:53:39 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DemoBlazeRunner@646007f4]" name="runScenario" duration-ms="4724" started-at="2023-03-17T00:09:22 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-17T00:09:27 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Add items to cart"]]>
+                <![CDATA["Adding products to cart"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["DemoBlaze Web Tests"]]>
+                <![CDATA["DemoBlazeWebTest"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[timeout: Timed out receiving message from renderer: -0.004
-  (Session info: MicrosoftEdge=111.0.1661.41)
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [0d523fd3e94f4be2fbca1e9cc962912c, get {url=https://www.demoblaze.com/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.41, ms:edgeOptions: {debuggerAddress: localhost:3842}, msedge: {msedgedriverVersion: 111.0.1661.43 (b6e9cbf64f5a..., userDataDir: C:\Users\HP\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:3842/devtool..., se:cdpVersion: 111.0.1661.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0d523fd3e94f4be2fbca1e9cc962912c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: -0.004
-  (Session info: MicrosoftEdge=111.0.1661.41)
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [0d523fd3e94f4be2fbca1e9cc962912c, get {url=https://www.demoblaze.com/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.41, ms:edgeOptions: {debuggerAddress: localhost:3842}, msedge: {msedgedriverVersion: 111.0.1661.43 (b6e9cbf64f5a..., userDataDir: C:\Users\HP\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:3842/devtool..., se:cdpVersion: 111.0.1661.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0d523fd3e94f4be2fbca1e9cc962912c
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
-at stepsDefs.DemoBlazeStepDef.user_is_on_launch_page(DemoBlazeStepDef.java:36)
-at ✽.User is on Launch Page(file:///D:/SDET%20training%20WS/CucumberCaseStudy/src/test/resources/features/demoBlazeBDD.feature:9)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DemoBlazeRunner@646007f4]" name="runScenario" duration-ms="86985" started-at="2023-03-16T15:53:39 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-16T15:55:06 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DemoBlazeRunner@646007f4]" name="runScenario" duration-ms="5740" started-at="2023-03-17T00:09:27 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-17T00:09:32 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Add items to cart"]]>
+                <![CDATA["Adding products to cart"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["DemoBlaze Web Tests"]]>
+                <![CDATA["DemoBlazeWebTest"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[timeout: Timed out receiving message from renderer: 50.000
-  (Session info: MicrosoftEdge=111.0.1661.41)
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [0d523fd3e94f4be2fbca1e9cc962912c, clickElement {id=24e7c821-4077-4982-b1d7-9b2a42f07636}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.41, ms:edgeOptions: {debuggerAddress: localhost:3842}, msedge: {msedgedriverVersion: 111.0.1661.43 (b6e9cbf64f5a..., userDataDir: C:\Users\HP\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:3842/devtool..., se:cdpVersion: 111.0.1661.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (0d523fd3e94f4be2fbca1e9cc962912c)] -> partial link text: Sony vaio i7]
-Session ID: 0d523fd3e94f4be2fbca1e9cc962912c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 50.000
-  (Session info: MicrosoftEdge=111.0.1661.41)
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [0d523fd3e94f4be2fbca1e9cc962912c, clickElement {id=24e7c821-4077-4982-b1d7-9b2a42f07636}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.41, ms:edgeOptions: {debuggerAddress: localhost:3842}, msedge: {msedgedriverVersion: 111.0.1661.43 (b6e9cbf64f5a..., userDataDir: C:\Users\HP\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:3842/devtool..., se:cdpVersion: 111.0.1661.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (0d523fd3e94f4be2fbca1e9cc962912c)] -> partial link text: Sony vaio i7]
-Session ID: 0d523fd3e94f4be2fbca1e9cc962912c
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at stepsDefs.DemoBlazeStepDef.user_add_an_to_the_cart(DemoBlazeStepDef.java:59)
-at ✽.User add an "Sony vaio i7" to the cart(file:///D:/SDET%20training%20WS/CucumberCaseStudy/src/test/resources/features/demoBlazeBDD.feature:10)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DemoBlazeRunner@646007f4]" name="runScenario" duration-ms="10745" started-at="2023-03-16T15:55:06 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-16T15:55:17 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DemoBlazeRunner@646007f4]" name="runScenario" duration-ms="340" started-at="2023-03-17T00:09:32 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-17T00:09:33 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Add items to cart"]]>
+                <![CDATA["Delete an item in the cart page"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["DemoBlaze Web Tests"]]>
+                <![CDATA["DemoBlazeWebTest"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=111.0.1661.41)
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [0d523fd3e94f4be2fbca1e9cc962912c, findElement {using=partial link text, value=Samsung galaxy s7}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.41, ms:edgeOptions: {debuggerAddress: localhost:3842}, msedge: {msedgedriverVersion: 111.0.1661.43 (b6e9cbf64f5a..., userDataDir: C:\Users\HP\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:3842/devtool..., se:cdpVersion: 111.0.1661.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0d523fd3e94f4be2fbca1e9cc962912c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=111.0.1661.41)
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [0d523fd3e94f4be2fbca1e9cc962912c, findElement {using=partial link text, value=Samsung galaxy s7}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.41, ms:edgeOptions: {debuggerAddress: localhost:3842}, msedge: {msedgedriverVersion: 111.0.1661.43 (b6e9cbf64f5a..., userDataDir: C:\Users\HP\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:3842/devtool..., se:cdpVersion: 111.0.1661.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0d523fd3e94f4be2fbca1e9cc962912c
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at stepsDefs.DemoBlazeStepDef.user_add_an_to_the_cart(DemoBlazeStepDef.java:57)
-at ✽.User add an "Samsung galaxy s7" to the cart(file:///D:/SDET%20training%20WS/CucumberCaseStudy/src/test/resources/features/demoBlazeBDD.feature:10)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DemoBlazeRunner@646007f4]" name="runScenario" duration-ms="166" started-at="2023-03-16T15:55:17 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-16T15:55:17 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Delete an item"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["DemoBlaze Web Tests"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=111.0.1661.41)
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [0d523fd3e94f4be2fbca1e9cc962912c, findElements {using=xpath, value=//td}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.41, ms:edgeOptions: {debuggerAddress: localhost:3842}, msedge: {msedgedriverVersion: 111.0.1661.43 (b6e9cbf64f5a..., userDataDir: C:\Users\HP\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:3842/devtool..., se:cdpVersion: 111.0.1661.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0d523fd3e94f4be2fbca1e9cc962912c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=111.0.1661.41)
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [0d523fd3e94f4be2fbca1e9cc962912c, findElements {using=xpath, value=//td}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.41, ms:edgeOptions: {debuggerAddress: localhost:3842}, msedge: {msedgedriverVersion: 111.0.1661.43 (b6e9cbf64f5a..., userDataDir: C:\Users\HP\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:3842/devtool..., se:cdpVersion: 111.0.1661.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0d523fd3e94f4be2fbca1e9cc962912c
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
-at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:380)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:372)
-at stepsDefs.DemoBlazeStepDef.user_is_on_cart_page(DemoBlazeStepDef.java:81)
-at ✽.User is on Cart Page(file:///D:/SDET%20training%20WS/CucumberCaseStudy/src/test/resources/features/demoBlazeBDD.feature:20)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DemoBlazeRunner@646007f4]" name="runScenario" duration-ms="61" started-at="2023-03-16T15:55:17 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-16T15:55:17 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DemoBlazeRunner@646007f4]" name="runScenario" duration-ms="5727" started-at="2023-03-17T00:09:33 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-17T00:09:39 IST">
           <params>
             <param index="0">
               <value>
@@ -361,56 +110,14 @@ at ✽.User is on Cart Page(file:///D:/SDET%20training%20WS/CucumberCaseStudy/sr
             </param>
             <param index="1">
               <value>
-                <![CDATA["DemoBlaze Web Tests"]]>
+                <![CDATA["DemoBlazeWebTest"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=111.0.1661.41)
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [0d523fd3e94f4be2fbca1e9cc962912c, findElements {using=xpath, value=//td}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.41, ms:edgeOptions: {debuggerAddress: localhost:3842}, msedge: {msedgedriverVersion: 111.0.1661.43 (b6e9cbf64f5a..., userDataDir: C:\Users\HP\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:3842/devtool..., se:cdpVersion: 111.0.1661.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0d523fd3e94f4be2fbca1e9cc962912c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=111.0.1661.41)
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [0d523fd3e94f4be2fbca1e9cc962912c, findElements {using=xpath, value=//td}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.41, ms:edgeOptions: {debuggerAddress: localhost:3842}, msedge: {msedgedriverVersion: 111.0.1661.43 (b6e9cbf64f5a..., userDataDir: C:\Users\HP\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:3842/devtool..., se:cdpVersion: 111.0.1661.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0d523fd3e94f4be2fbca1e9cc962912c
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
-at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:380)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:372)
-at stepsDefs.DemoBlazeStepDef.user_is_on_cart_page(DemoBlazeStepDef.java:81)
-at ✽.User is on Cart Page(file:///D:/SDET%20training%20WS/CucumberCaseStudy/src/test/resources/features/demoBlazeBDD.feature:25)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.DemoBlazeRunner@646007f4]" name="tearDownClass" is-config="true" duration-ms="15422" started-at="2023-03-16T15:55:18 IST" finished-at="2023-03-16T15:55:33 IST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.DemoBlazeRunner@646007f4]" name="tearDownClass" is-config="true" duration-ms="4586" started-at="2023-03-17T00:09:39 IST" finished-at="2023-03-17T00:09:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

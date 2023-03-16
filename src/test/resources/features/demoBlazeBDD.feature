@@ -1,23 +1,23 @@
-Feature: Product Store Page Test
+Feature: DemoBlazeWebTest
 
-Scenario: Login into App
-Given User into the login page
-When User enters login credientials
-Then Should Display Home Page
+Scenario: Valid login
+Given User is on the login Page
+When User enters "ShriAthi" and "Shri.01" in the login page
+Then It navigates to the Home Page
 
-Scenario Outline: Add Items To Cart
-When Add an Item "<catagory>" to "<item>" Cart
-Then Items must be added to cart
-Examples: 
-	| catagory | item |
-	| Laptops | Sony vaio i7 |
-	| Phones | Sony xperia z5 |
+Scenario Outline: Adding products to cart
+When User add "<products>" to the cart
+Then products must be added to cart
+Examples:
+	| products |
+	|	Nokia lumia 1520 |
+	| HTC One M9 |
+	| Sony vaio i5 |
 	
-Scenario: Delete an Item
-When List of items should be available in Cart
-Then Delete an item from cart
+Scenario: Delete an item in the cart page
+When List of added items must be available in the cart page
+Then Delete an item in the cart
 
-Scenario: Place Order
-When Items Should be available in Cart
-Then Place order
-And Purchase Items
+Scenario: Place an order
+When User snaps the place order
+Then Products should be placed

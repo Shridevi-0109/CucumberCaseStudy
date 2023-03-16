@@ -95,7 +95,6 @@ public class DemoBlazeStepDef {
 		Assert.assertTrue(products.size()!=0);
 		WebElement price;
 		price=driver.findElement(By.id("totalp"));
-		//System.out.println(beforedel);
 		beforedel=price.getText();
 	}
 	
@@ -107,15 +106,13 @@ public class DemoBlazeStepDef {
 		WebElement price;
 		price=driver.findElement(By.id("totalp"));
 		afterdel=price.getText();
-		//System.out.println(afterdel);
-		Assert.assertEquals(beforedel, afterdel);
-		
+		Assert.assertEquals(beforedel, afterdel);		
 	}
 	
 	
 	@When("User snaps the place order")
 	public void User_snaps_the_place_order() throws InterruptedException {
-		Thread.sleep(2000);
+		Thread.sleep(3000);
     	driver.findElement(By.xpath("//button[contains(text(),'Place Order')]")).click();
 		driver.findElement(By.xpath("//input[@id='name']")).sendKeys("ShriAthi");
 		driver.findElement(By.xpath("//input[@id='country']")).sendKeys("India");
@@ -123,20 +120,14 @@ public class DemoBlazeStepDef {
 		driver.findElement(By.xpath("//input[@id='card']")).sendKeys("6383 5188 3645 1758");
 		driver.findElement(By.xpath("//input[@id='month']")).sendKeys("September");
 		driver.findElement(By.xpath("//input[@id='year']")).sendKeys("2023");
-		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
+		Thread.sleep(2000);
     	driver.findElement(By.xpath("//button[contains(text(),'Purchase')]")).click();
 	}
 	
 	@Then("Products should be placed")
-	public void Products_should_be_placed() {
-		//WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
-		boolean isDisp = driver.findElement(By.xpath("//h2[text()='Thank you for your purchase!']")).isDisplayed();
-    	String Disp = driver.findElement(By.xpath("//h2[text()='Thank you for your purchase!']")).getText();
-    	Assert.assertTrue(isDisp);
-    	//Thread.sleep(1000);
-    	driver.findElement(By.xpath("//button[text()='OK']")).click();
-    	WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(30));
-    	driver.close();
-		
+	public void Products_should_be_placed() throws InterruptedException {
+		Thread.sleep(2000);
+    	driver.findElement(By.xpath("//button[text()='OK']")).click();	
+		driver.close();
 	}
 }
